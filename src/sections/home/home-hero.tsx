@@ -205,7 +205,7 @@ export default function HomeHero() {
 
       <m.div variants={varFade().in}>
         <Typography variant="body2" sx={{ textAlign: 'center' }}>
-          Esta es la version de desarrollo
+          Esta es la version de desarrollo David
         </Typography>
       </m.div>
 
