@@ -15,6 +15,7 @@ import { useSettingsContext } from 'src/components/settings';
 // assets
 import { SeoIllustration } from 'src/assets/illustrations';
 //
+import { useAuthContext } from 'src/auth/hooks';
 import AppWidget from '../app-widget';
 import AppWelcome from '../app-welcome';
 import AppFeatured from '../app-featured';
@@ -34,6 +35,8 @@ export default function OverviewAppView() {
   const theme = useTheme();
 
   const settings = useSettingsContext();
+  const {authenticated} = useAuthContext()
+  console.log("autenticado", authenticated);
 
   return (
     <Container maxWidth={settings.themeStretch ? false : 'xl'}>

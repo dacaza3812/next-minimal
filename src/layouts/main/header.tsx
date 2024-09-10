@@ -30,7 +30,8 @@ import { SettingsButton, HeaderShadow, LoginButton } from '../_common';
 
 export default function Header() {
   const theme = useTheme();
-
+  console.log(navConfig);
+  
   const mdUp = useResponsive('up', 'md');
 
   const offsetTop = useOffSetTop(HEADER.H_DESKTOP);
@@ -75,7 +76,7 @@ export default function Header() {
                 sx={{ ml: 1 }}
               >
                 <Label color="info" sx={{ textTransform: 'unset', height: 22, px: 0.5 }}>
-                  v5.0.0
+                  v1.0.0
                 </Label>
               </Link>
             }
@@ -88,9 +89,7 @@ export default function Header() {
           {mdUp && <NavDesktop offsetTop={offsetTop} data={navConfig} />}
 
           <Stack alignItems="center" direction={{ xs: 'row', md: 'row-reverse' }}>
-            <Button variant="contained" target="_blank" rel="noopener" href={paths.minimalUI}>
-              Purchase Now
-            </Button>
+            
 
             {mdUp && <LoginButton />}
 
