@@ -87,13 +87,13 @@ export default function JwtRegisterView() {
 
   const renderHead = (
     <Stack spacing={2} sx={{ mb: 5, position: 'relative' }}>
-      <Typography variant="h4">Get started absolutely free</Typography>
+      <Typography variant="h4">Crear una cuenta es muy fácil</Typography>
 
       <Stack direction="row" spacing={0.5}>
-        <Typography variant="body2"> Already have an account? </Typography>
+        <Typography variant="body2"> Ya tienes una cuenta? </Typography>
 
         <Link href={paths.auth.jwt.login} component={RouterLink} variant="subtitle2">
-          Sign in
+          Inicia Sesión
         </Link>
       </Stack>
     </Stack>
@@ -104,13 +104,13 @@ export default function JwtRegisterView() {
       component="div"
       sx={{ color: 'text.secondary', mt: 2.5, typography: 'caption', textAlign: 'center' }}
     >
-      {'By signing up, I agree to '}
+      {'Al crear una cuenta yo acepto los '}
       <Link underline="always" color="text.primary">
-        Terms of Service
+        Terminos del Servicio
       </Link>
-      {' and '}
+      {' y la '}
       <Link underline="always" color="text.primary">
-        Privacy Policy
+        Política de Privacidad
       </Link>
       .
     </Typography>
@@ -122,15 +122,15 @@ export default function JwtRegisterView() {
         {!!errorMsg && <Alert severity="error">{errorMsg}</Alert>}
 
         <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
-          <RHFTextField name="firstName" label="First name" />
-          <RHFTextField name="lastName" label="Last name" />
+          <RHFTextField name="firstName" label="Primer nombre" />
+          <RHFTextField name="lastName" label="Segundo Nombre" />
         </Stack>
 
-        <RHFTextField name="email" label="Email address" />
+        <RHFTextField name="email" label="Correo electrónico" />
 
         <RHFTextField
           name="password"
-          label="Password"
+          label="Contraseña"
           type={password.value ? 'text' : 'password'}
           InputProps={{
             endAdornment: (
@@ -151,7 +151,7 @@ export default function JwtRegisterView() {
           variant="contained"
           loading={isSubmitting}
         >
-          Create account
+          Crear Cuenta
         </LoadingButton>
       </Stack>
     </FormProvider>
