@@ -70,7 +70,7 @@ export default function AppNewInvoice({
           color="inherit"
           endIcon={<Iconify icon="eva:arrow-ios-forward-fill" width={18} sx={{ ml: -0.5 }} />}
         >
-          View All
+          Ver Todo
         </Button>
       </Box>
     </Card>

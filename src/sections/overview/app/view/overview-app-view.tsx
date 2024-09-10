@@ -15,7 +15,6 @@ import { useSettingsContext } from 'src/components/settings';
 // assets
 import { SeoIllustration } from 'src/assets/illustrations';
 //
-import { useAuthContext } from 'src/auth/hooks';
 import AppWidget from '../app-widget';
 import AppWelcome from '../app-welcome';
 import AppFeatured from '../app-featured';
@@ -35,20 +34,18 @@ export default function OverviewAppView() {
   const theme = useTheme();
 
   const settings = useSettingsContext();
-  const {authenticated} = useAuthContext()
-  console.log("autenticado", authenticated);
 
   return (
     <Container maxWidth={settings.themeStretch ? false : 'xl'}>
       <Grid container spacing={3}>
         <Grid xs={12} md={8}>
           <AppWelcome
-            title={`Welcome back 👋 \n ${user?.displayName}`}
-            description="If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything."
+            title={`Bienvenido 👋 \n ${user?.displayName}`}
+            description="---Este texto todavía se encuentra en desarrollo"
             img={<SeoIllustration />}
             action={
               <Button variant="contained" color="primary">
-                Go Now
+                Ir ahora
               </Button>
             }
           />
@@ -60,7 +57,7 @@ export default function OverviewAppView() {
 
         <Grid xs={12} md={4}>
           <AppWidgetSummary
-            title="Total Active Users"
+            title="Total de Usuarios Activos"
             percent={2.6}
             total={18765}
             chart={{
@@ -71,7 +68,7 @@ export default function OverviewAppView() {
 
         <Grid xs={12} md={4}>
           <AppWidgetSummary
-            title="Total Installed"
+            title="Total de registros"
             percent={0.2}
             total={4876}
             chart={{
@@ -83,7 +80,7 @@ export default function OverviewAppView() {
 
         <Grid xs={12} md={4}>
           <AppWidgetSummary
-            title="Total Downloads"
+            title="Valance Total"
             percent={-0.1}
             total={678}
             chart={{
@@ -95,13 +92,13 @@ export default function OverviewAppView() {
 
         <Grid xs={12} md={6} lg={4}>
           <AppCurrentDownload
-            title="Current Download"
+            title="Tipos de Facturas"
             chart={{
               series: [
-                { label: 'Mac', value: 12244 },
-                { label: 'Window', value: 53345 },
-                { label: 'iOS', value: 44313 },
-                { label: 'Android', value: 78343 },
+                { label: 'Venta', value: 12244 },
+                { label: 'Preventa', value: 53345 },
+                { label: 'Deuda', value: 44313 },
+                { label: 'Sin Asignar', value: 78343 },
               ],
             }}
           />
@@ -109,8 +106,8 @@ export default function OverviewAppView() {
 
         <Grid xs={12} md={6} lg={8}>
           <AppAreaInstalled
-            title="Area Installed"
-            subheader="(+43%) than last year"
+            title="Movimiento de Efectivo"
+            subheader="(+43%) que el último año"
             chart={{
               categories: [
                 'Jan',
@@ -131,11 +128,11 @@ export default function OverviewAppView() {
                   year: '2019',
                   data: [
                     {
-                      name: 'Asia',
+                      name: 'Copra',
                       data: [10, 41, 35, 51, 49, 62, 69, 91, 148, 35, 51, 49],
                     },
                     {
-                      name: 'America',
+                      name: 'Venta',
                       data: [10, 34, 13, 56, 77, 88, 99, 77, 45, 13, 56, 77],
                     },
                   ],
@@ -144,11 +141,11 @@ export default function OverviewAppView() {
                   year: '2020',
                   data: [
                     {
-                      name: 'Asia',
+                      name: 'Compra',
                       data: [51, 35, 41, 10, 91, 69, 62, 148, 91, 69, 62, 49],
                     },
                     {
-                      name: 'America',
+                      name: 'Venta',
                       data: [56, 13, 34, 10, 77, 99, 88, 45, 77, 99, 88, 77],
                     },
                   ],
@@ -160,13 +157,13 @@ export default function OverviewAppView() {
 
         <Grid xs={12} lg={8}>
           <AppNewInvoice
-            title="New Invoice"
+            title="Nuevas Facturas"
             tableData={_appInvoices}
             tableLabels={[
-              { id: 'id', label: 'Invoice ID' },
-              { id: 'category', label: 'Category' },
-              { id: 'price', label: 'Price' },
-              { id: 'status', label: 'Status' },
+              { id: 'id', label: 'ID Factura' },
+              { id: 'category', label: 'Categoría' },
+              { id: 'price', label: 'Precio' },
+              { id: 'status', label: 'Estado' },
               { id: '' },
             ]}
           />
