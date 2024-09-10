@@ -27,7 +27,7 @@ export default function HomeForDesigner() {
     <Box sx={{ textAlign: { xs: 'center', md: 'unset' }, mt: { xs: 10, md: 20 } }}>
       <m.div variants={varFade().inUp}>
         <Typography component="div" variant="overline" sx={{ color: 'text.disabled' }}>
-          Professional Kit
+          Siempre Profesional
         </Typography>
       </m.div>
 
@@ -42,7 +42,7 @@ export default function HomeForDesigner() {
             ),
           }}
         >
-          For Designer
+          Especial para Ti
         </Typography>
       </m.div>
 
@@ -52,11 +52,10 @@ export default function HomeForDesigner() {
           size="large"
           variant="contained"
           endIcon={<Iconify icon="eva:arrow-ios-forward-fill" />}
-          target="_blank"
           rel="noopener"
-          href={paths.figma}
+          href={paths.auth.jwt.login}
         >
-          Figma Workspace
+          Accede al dahsboard
         </Button>
       </m.div>
     </Box>

@@ -30,7 +30,6 @@ import { SettingsButton, HeaderShadow, LoginButton } from '../_common';
 
 export default function Header() {
   const theme = useTheme();
-  console.log(navConfig);
   
   const mdUp = useResponsive('up', 'md');
 

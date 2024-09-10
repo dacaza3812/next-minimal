@@ -20,19 +20,19 @@ export default function HomeDarkMode() {
     <Stack alignItems="center" spacing={3}>
       <m.div variants={varFade().inUp}>
         <Typography component="div" variant="overline" sx={{ color: 'primary.main' }}>
-          Easy switch between styles.
+          Facil cambiar entre estilos.
         </Typography>
       </m.div>
 
       <m.div variants={varFade().inUp}>
         <Typography variant="h2" sx={{ color: 'common.white' }}>
-          Dark mode
+          Modo Oscuro
         </Typography>
       </m.div>
 
       <m.div variants={varFade().inUp}>
         <Typography sx={{ color: 'grey.500' }}>
-          A dark theme that feels easier on the eyes.
+          Un modo oscuro que hará sentir tus ojos menos cansados.
         </Typography>
       </m.div>
 

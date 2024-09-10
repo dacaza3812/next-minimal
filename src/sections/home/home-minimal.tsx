@@ -14,19 +14,19 @@ import { MotionViewport, varFade } from 'src/components/animate';
 const CARDS = [
   {
     icon: ' /assets/icons/home/ic_make_brand.svg',
-    title: 'Branding',
-    description: 'Consistent design makes it easy to brand your own.',
+    title: 'Comodidad',
+    description: 'Todas las funciones en un solo lugar.',
   },
   {
     icon: ' /assets/icons/home/ic_design.svg',
-    title: 'UI & UX Design',
+    title: 'Diseño',
     description:
-      'The kit is built on the principles of the atomic design system. It helps you to create projects fastest and easily customized packages for your projects.',
+      'Con un diseño minimalista, es más fácil que puedas encontrar lo que necesitas, con datos estructurados e información correctamente visible.',
   },
   {
     icon: ' /assets/icons/home/ic_development.svg',
-    title: 'Development',
-    description: 'Easy to customize and extend, saving you time and money.',
+    title: 'Desarrollo',
+    description: 'Es fácil de añadir nuevas funcionalidades en el tiempo, ideal para negocios en crecimiento',
   },
 ];
 
@@ -49,13 +49,13 @@ export default function HomeMinimal() {
       >
         <m.div variants={varFade().inUp}>
           <Typography component="div" variant="overline" sx={{ color: 'text.disabled' }}>
-            Minimal UI
+            MinDash
           </Typography>
         </m.div>
 
         <m.div variants={varFade().inDown}>
           <Typography variant="h2">
-            What Minimal <br /> helps you?
+            En qué MinDash <br /> puede ayudarte?
           </Typography>
         </m.div>
       </Stack>

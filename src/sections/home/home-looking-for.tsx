@@ -24,12 +24,11 @@ export default function HomeLookingFor() {
       color="inherit"
       size="large"
       variant="outlined"
-      target="_blank"
       rel="noopener"
-      href={paths.zoneUI}
+      href={paths.auth.jwt.login}
       endIcon={<Iconify icon="eva:arrow-ios-forward-fill" />}
     >
-      Visit Zone Landing Page
+      Accede Ahora
     </Button>
   );
 
@@ -44,7 +43,7 @@ export default function HomeLookingFor() {
     >
       <m.div variants={varFade().inDown}>
         <Typography variant="overline" component="div" sx={{ color: 'text.disabled' }}>
-          Looking For a
+          Especial para
         </Typography>
       </m.div>
 
@@ -56,7 +55,7 @@ export default function HomeLookingFor() {
             mb: { md: 5 },
           }}
         >
-          Landing Page Template?
+          Todo tipo de negocios
         </Typography>
       </m.div>
 

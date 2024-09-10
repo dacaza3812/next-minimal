@@ -63,9 +63,9 @@ export default function Footer() {
         <Logo sx={{ mb: 1, mx: 'auto' }} />
 
         <Typography variant="caption" component="div">
-          © All rights reserved
-          <br /> made by
-          <Link href="https://minimals.cc/"> minimals.cc </Link>
+          © Todos los derechos reservados
+          <br /> desarrollado por 
+          <Link href="wa.me/58864240"> David </Link>
         </Typography>
       </Container>
     </Box>
@@ -163,7 +163,7 @@ export default function Footer() {
         </Grid>
 
         <Typography variant="body2" sx={{ mt: 10 }}>
-          © 2021. All rights reserved
+          © 2024. Todos los derechos reservados
         </Typography>
       </Container>
     </Box>

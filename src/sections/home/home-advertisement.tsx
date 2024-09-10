@@ -32,8 +32,8 @@ export default function HomeAdvertisement() {
         variants={varFade().inDown}
         sx={{ color: 'common.white', mb: 5, typography: 'h2' }}
       >
-        Get started with
-        <br /> Minimal kit today
+        Accede a
+        <br /> MinDash hoy
       </Box>
 
       <Stack
@@ -46,32 +46,18 @@ export default function HomeAdvertisement() {
             color="inherit"
             size="large"
             variant="contained"
-            target="_blank"
             rel="noopener"
-            href={paths.minimalUI}
+            href={paths.auth.jwt.login}
             sx={{
               color: 'grey.800',
               bgcolor: 'common.white',
             }}
           >
-            Purchase Now
+            Accede Ahora
           </Button>
         </m.div>
 
-        <m.div variants={varFade().inRight}>
-          <Button
-            color="inherit"
-            size="large"
-            variant="outlined"
-            target="_blank"
-            rel="noopener"
-            href={paths.freeUI}
-            endIcon={<Iconify icon="eva:external-link-fill" width={16} sx={{ mr: 0.5 }} />}
-            sx={{ color: 'common.white', '&:hover': { borderColor: 'currentColor' } }}
-          >
-            Get Free Version
-          </Button>
-        </m.div>
+        
       </Stack>
     </Box>
   );

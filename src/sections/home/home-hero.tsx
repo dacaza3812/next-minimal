@@ -184,8 +184,8 @@ export default function HomeHero() {
             textAlign: 'center',
           }}
         >
-          Start a <br />
-          New Project with
+          Todo en <br />
+          un solo lugar
         </Typography>
       </m.div>
 
@@ -199,13 +199,13 @@ export default function HomeHero() {
             repeat: Infinity,
           }}
         >
-          Minimal
+          MinDash
         </StyledTextGradient>
       </m.div>
 
       <m.div variants={varFade().in}>
         <Typography variant="body2" sx={{ textAlign: 'center' }}>
-          Esta es la version de desarrollo David
+          El dashboard por excelencia para tu negocio
         </Typography>
       </m.div>
 
@@ -236,46 +236,24 @@ export default function HomeHero() {
               color="inherit"
               size="large"
               variant="contained"
-              startIcon={<Iconify icon="eva:flash-fill" width={24} />}
+             // startIcon={<Iconify icon="eva:flash-fill" width={24} />}
             >
-              Live Preview
+              Accede Ahora
             </Button>
 
-            <Link
-              color="inherit"
-              variant="caption"
-              target="_blank"
-              rel="noopener"
-              href={paths.freeUI}
-              sx={{ textDecoration: 'underline', display: 'inline-flex', alignItems: 'center' }}
-            >
-              <Iconify icon="eva:external-link-fill" width={16} sx={{ mr: 0.5 }} />
-              Get Free Version
-            </Link>
           </Stack>
 
-          <Button
-            color="inherit"
-            size="large"
-            variant="outlined"
-            startIcon={<Iconify icon="eva:external-link-fill" width={24} />}
-            target="_blank"
-            rel="noopener"
-            href={paths.figma}
-            sx={{ borderColor: 'text.primary' }}
-          >
-            Design Preview
-          </Button>
+          
         </Stack>
       </m.div>
 
       <Stack spacing={3} sx={{ textAlign: 'center', opacity: 0.48 }}>
         <m.div variants={varFade().in}>
-          <Typography variant="overline">Available For</Typography>
+          <Typography variant="overline">Desarrollado En</Typography>
         </m.div>
 
         <Stack spacing={2} direction="row" justifyContent="center">
-          {['figma', 'js', 'ts', 'nextjs'].map((platform) => (
+          {['nextjs'].map((platform) => (
             <m.div key={platform} variants={varFade().in}>
               <SvgColor src={`/assets/icons/platforms/ic_${platform}.svg`} />
             </m.div>
